@@ -56,7 +56,7 @@ export default class SortableTable {
       };
     });
     return cells.map(({id, template}) => {
-      return template ? template(el[id]) : `<div class="sortable-table__cell">${item[id]}</div>`;
+      return template ? template(el[id]) : `<div class="sortable-table__cell">${el[id]}</div>`;
     }).join('');
   }
 
